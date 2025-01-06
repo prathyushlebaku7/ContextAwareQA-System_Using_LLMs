@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB692;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #FCE1CC;
+    border-radius: 20px;
+    padding: 40px;
+    width: 600px; /* Increased width for a larger interface */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px; /* Increased font size */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 18px; /* Increased font size for readability */
+}
+
+textarea {
+    height: 150px; /* Larger textarea height */
+    resize: none;
+}
+
+button {
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px; /* Larger button for better visibility */
+    color: #FFF;
+    font-size: 18px; /* Increased button font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #FF6347;
+}
+
+#answer {
+    margin-top: 25px;
+    font-size: 20px; /* Increased font size for the answer text */
+    color: #444;
+    text-align: left;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask a Question</h1>
+        <textarea id="context" placeholder="Enter the context..."></textarea>
+        <input type="text" id="question" placeholder="Enter your question">
+        <button onclick="getAnswer()">Get Answer</button>
+        <div id="answer" class="answer-box"></div>
+    </div>
+
+    <!-- Inline JavaScript for handling the answer functionality -->
+    <script>
+        async function getAnswer() {
+            const context = document.getElementById('context').value;
+            const question = document.getElementById('question').value;
+            const answerBox = document.getElementById('answer');
+
+            answerBox.style.display = 'none';
+            answerBox.textContent = "Thinking... 🤖";
+            answerBox.style.display = 'block';
+
+            // Fetch the answer from the backend
+            const response = await fetch('/get_answer', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ context, question })
+            });
+
+            const result = await response.json();
+            
+            // Print the answer in the console
+            console.log("Answer:", result.answer);
+
+            // Display the answer on the page
+            answerBox.textContent = `Answer: ${result.answer || "Sorry, no answer found."}`;
+        }
+    </script>
+</body>
+</html>
