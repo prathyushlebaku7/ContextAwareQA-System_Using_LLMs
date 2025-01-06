@@ -1,6 +1,6 @@
 # 🧠 Fine-Tuning BERT for Question Answering (SQuAD v2.0)
 
-My goal is to explore the principles of parallel processing and gain a deeper understanding of how Large Language Models (LLMs) function, including their architecture, training processes, and real-world applications.
+My goal is to explore the principles of parallel processing of  multi-head attention moudle and gain a deeper understanding of how Large Language Models (LLMs) function, including their architecture, training processes, and real-world applications.
 This project focuses on building a **Question Answering System** by fine-tuning **BERT** and **BiDAF** models on the **SQuAD v2.0** dataset. After evaluating both models, **BERT** emerged as the superior model for answering complex questions with contextual accuracy. 
 
 ---
