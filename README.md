@@ -55,4 +55,4 @@ Here’s a snapshot of the deployed web application:
    python app.py
 
 4. Open your browser and access the local application
-5. The best Model weights are saved in my drive please access the link here and move the weigths to /Project/.
+5. The best Model weights are saved in my drive please access the link "https://drive.google.com/drive/folders/1WDSrrjRZwhalbLF1Nbss8YzhVH2mwr5P?usp=sharing" here and move the weigths to /Project/.
